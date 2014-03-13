@@ -16,7 +16,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision "shell", path: "bootstrap.sh"
   
   config.vm.provision "ansible" do |ansible|
-    ansible.inventory_path = "provisioning/hosts"
+    #ansible.inventory_path = "provisioning/hosts"
     ansible.extra_vars = {
       hostname: "localhost"
     }
