@@ -3,8 +3,13 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.hostname = "smart-vm"
+  
+  # Use Ubuntu 12.04 64-bit by default. If 32-bit Ubuntu is desired, replace the settings below with the two alternative ones.
   config.vm.box = "ubuntu/precise64"
   config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-amd64-vagrant-disk1.box"
+  # config.vm.box = "ubuntu/precise32"
+  # config.vm.box_url = "http://cloud-images.ubuntu.com/vagrant/precise/current/precise-server-cloudimg-i386-vagrant-disk1.box"
+  
   config.vm.provider "virtualbox" do |vb|
     vb.customize ["modifyvm", :id, "--memory", "1024"]
   end
