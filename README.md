@@ -10,8 +10,8 @@ Make sure that you have the following installed on your system:
 
 ## Installation
 
-Download the SMART-VM builder from GitHUB either directly from this URL:
-`https://github.com/chb/smart-vm/releases`
+Download the SMART-VM builder from GitHUB either directly from
+[https://github.com/chb/smart-vm/releases](https://github.com/chb/smart-vm/releases)
 or via git (if you have it installed):
 ```
 git clone --recursive https://github.com/chb/smart-vm.git
@@ -25,4 +25,4 @@ vagrant up
 
 ... wait ~10min while everything installs (depending on your Internet connection speed).
 
-Now visit `http://localhost:7001` in a web browser and you should have a working SMART server.
+Now visit [http://localhost:7001](http://localhost:7001) in a web browser and you should have a working SMART server.
