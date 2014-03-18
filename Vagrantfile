@@ -18,8 +18,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "forwarded_port", guest: 7001, host: 7001
   config.vm.network "forwarded_port", guest: 8001, host: 8001
   
-  config.vm.provision "shell", path: "bootstrap.sh"
-  
   config.vm.provision "ansible" do |ansible|
     #ansible.inventory_path = "provisioning/hosts"
     ansible.extra_vars = {
