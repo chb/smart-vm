@@ -17,6 +17,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network "forwarded_port", guest: 7000, host: 7000
   config.vm.network "forwarded_port", guest: 7001, host: 7001
   config.vm.network "forwarded_port", guest: 8001, host: 8001
+  config.vm.network "forwarded_port", guest: 9001, host: 9001
+  config.vm.network "forwarded_port", guest: 9002, host: 9002
+  config.vm.network "forwarded_port", guest: 9003, host: 9003
   
   config.vm.provision "shell", path: "provisioning/fetch-templates.sh", args: "/vagrant/provisioning/templates/config"
   
