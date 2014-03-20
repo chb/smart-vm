@@ -26,3 +26,15 @@ vagrant up
 ... wait ~10min while everything installs (depending on your Internet connection speed).
 
 Now visit [http://localhost:7001](http://localhost:7001) in a web browser and you should have a working SMART server.
+
+*Note:* The last step in the build process ("Load Sample Patients in SMART Server") may fail occasionally.
+We are aware of this issue and working on resolving it. In the meanwhile, should you encounter this, here
+is a quick fix:
+
+```
+vagrant ssh
+sudo su - smart
+./smart_manager.py -l
+exit
+exit
+```
