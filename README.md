@@ -2,11 +2,11 @@
 
 ## Prerequisites
 
-Make sure that you have the following installed on your system:
+Make sure that you have the following installed on your system (we have tested with the versions below, but other versions may be fine too):
 
-1. [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-2. [Vagrant](http://www.vagrantup.com/downloads)
-3. [Ansible](http://docs.ansible.com/intro_installation.html)
+1. [VirtualBox 4.3.8](https://www.virtualbox.org/wiki/Downloads)
+2. [Vagrant 1.5.0](http://www.vagrantup.com/downloads)
+3. [Ansible 1.5.2](http://docs.ansible.com/intro_installation.html)
 
 ## Installation
 
