@@ -10,11 +10,9 @@ Make sure that you have the following installed on your system (we have tested w
 
 ## Installation
 
-Download the SMART-VM builder from GitHUB either directly from
-[https://github.com/chb/smart-vm/releases](https://github.com/chb/smart-vm/releases)
-or via git (if you have it installed):
+Grab the latest SMART VM builder:
 ```
-git clone --recursive https://github.com/chb/smart-vm.git
+git clone --recursive --recurse-submodules https://github.com/smart-platforms/smart-vm.git
 ```
 
 Next, run the following commands:
